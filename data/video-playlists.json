@@ -5,23 +5,19 @@
     "playlistId": "PLd2-N7zbU0AwTDG4aw7JntggI7t5shAoL",
     "layout": "portrait"
   },
-
   {
     "id": "logopedia",
     "title": "Logopedia",
     "playlistId": "PLd2-N7zbU0AytbP3RbtWlyhFiFoLyi-7K",
     "layout": "portrait"
   },
-
   {
     "id": "terapiapedagogiczna",
     "title": "Terapia Pedagogiczna",
     "playlistId": "PLd2-N7zbU0AzhIx3SGGQriT6Z-dqs3WCC",
     "layout": "portrait"
   },
-
   {
-  	"_comment":"layout - landscape OR portrait ",
     "id": "dogoterapia",
     "title": "Dogoterapia",
     "playlistId": "PLd2-N7zbU0Aw1WqfHy0VSI3-6nleMk7-o",

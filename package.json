@@ -4,13 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "generate:videos": "node --env-file=.env.local scripts/generate-video-gallery.mjs",
-    "prebuild": "npm run generate:videos",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:deploy": "next build && rsync -av --delete out/ ../public_html/",
-    "update": "npm run generate:videos && npm run build:deploy"
+    "poll:videos": "node --env-file=.env.local scripts/poll-video-playlists.mjs"
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",

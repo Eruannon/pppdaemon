@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+
 import { VideosPageClient } from "@/components/videos/videos-page-client";
-import type { VideoSection } from "@/components/videos/types";
-import sectionsData from "@/data/generated/video-gallery.json";
+import { getVideoGallery } from "@/lib/youtube/video-gallery";
 
 export const metadata: Metadata = {
   title: "Galeria Video | Poradnia MAGNOLIA",
   description: "Galeria Video Poradnii Magnolia",
 };
 
-export default function VideosPage() {
-  return (
-    <VideosPageClient sections={sectionsData as VideoSection[]} />
-  );
+export const revalidate = 300;
+
+export default async function VideosPage() {
+  const sections = await getVideoGallery();
+
+  return <VideosPageClient sections={sections} />;
 }
